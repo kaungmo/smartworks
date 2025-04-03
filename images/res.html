@@ -1,0 +1,361 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Welcome to SmartWorks</title>
+    <meta name="keywords" content="smart works, web development, queue system, smart home, security, security door, decoration, web design, yangon, myanmar, software development" />
+    <link href="css/templatemo_style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
+    <script language="javascript" type="text/javascript">
+        function clearText(field) {
+
+            if (field.defaultValue == field.value) field.value = '';
+            else if (field.value == '') field.value = field.defaultValue;
+
+        }
+    </script>
+    <link rel="stylesheet" type="text/css" href="css/ddsmoothmenu.css" />
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/ddsmoothmenu.js">
+
+    </script>
+    <script type="text/javascript">
+
+        ddsmoothmenu.init({
+            mainmenuid: "templatemo_menu", //menu DIV id
+            orientation: 'h', //Horizontal or vertical menu: Set to "h" or "v"
+            classname: 'ddsmoothmenu', //class added to menu's outer DIV
+            //customtheme: ["#1c5a80", "#18374a"],
+            contentsource: "markup" //"markup" or ["container_id", "path_to_menu_file"]
+        })
+
+    </script>
+    <style type="text/css">
+        .style1
+        {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div id="templatemo_wrapper">
+        <div id="templatemo_header">
+            <table border="0" cellpadding="0" cellspacing="0" width="100%" height="100%">
+                <tr>
+                    <td width="30%">
+                        <img src="images/smartworks_logo.png" height="130px" width="250px" />
+                    </td>
+                    <td width="70%" valign="bottom">
+                        <div id="templatemo_menu" class="ddsmoothmenu">
+                            <ul>
+                                <li><a href="index.html" style="color: Black">Home</a></li>
+                                <li><a href="" style="color: Black">Company</a>
+                                    <ul>
+                                        <li><a href="about.html">About SmartWorks</a></li>
+                                        <li><a href="career.htm">Career</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="" style="color: Black">Markets</a>
+                                    <ul>
+                                        <li><a href="ce.html">Corporate Enterprise</a></li>
+                                        <li><a href="gov.html">Government</a></li>
+                                        <li><a href="res.html">Residential</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="" style="color: Black">Products </a>
+                                    <ul>
+                                        <li><a href="crestron.html">Crestron</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="" style="color: Black">Services</a>
+                                    <ul>
+                                        <li><a href="systemIntegration.html">System Integration</a></li>
+                                        <li><a href="software.html">Application Development</a></li>
+                                        <li><a href="mgnt.html">Maintenance & Facility Management</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="contact.html" style="color: Black">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <!-- end of header -->
+            <!-- <div id="search_box">
+            <form action="#" method="get">
+                <input type="text" value="Search" name="q" size="10" id="searchfield" title="searchfield" onfocus="clearText(this)" onblur="clearText(this)" />
+                <input type="submit" name="Search" value="" id="searchbutton" title="Search" />
+            </form>
+        </div>-->
+        </div>
+        <!-- end of templatemo_menu -->
+        <div id="templatemo_slider">
+            <div id="slider" class="nivoSlider">
+                <img src="images/slider/01.jpg" alt="" title="" />
+                <img src="images/slider/02.jpg" alt="" title="" />
+                <img src="images/slider/03.jpg" alt="" title="" />
+                <img src="images/slider/04.jpg" alt="" title="" />
+            </div>
+            <div id="htmlcaption" class="nivo-html-caption">
+                <strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>.
+            </div>
+            <script type="text/javascript" src="js/jquery-1.4.3.min.js"></script>
+            <script type="text/javascript" src="js/jquery.nivo.slider.pack.js"></script>
+            <script type="text/javascript">
+                $(window).load(function () {
+                    $('#slider').nivoSlider({
+                        effect: 'random', // Specify sets like: 'fold,fade,sliceDown'
+                        slices: 15, // For slice animations
+                        boxCols: 8, // For box animations
+                        boxRows: 4, // For box animations
+                        animSpeed: 500, // Slide transition speed
+                        pauseTime: 3000, // How long each slide will show
+                        startSlide: 0, // Set starting Slide (0 index)
+                        directionNav: true, // Next and Prev navigation
+                        directionNavHide: false, // Only show on hover
+                        controlNav: false, // 1,2,3... navigation
+                        controlNavThumbs: false, // Use thumbnails for Control Nav
+                        controlNavThumbsFromRel: false, // Use image rel for thumbs
+                        controlNavThumbsSearch: '.jpg', // Replace this with...
+                        controlNavThumbsReplace: '_thumb.jpg', // ...this in thumb Image src
+                        keyboardNav: true, // Use left and right arrows
+                        pauseOnHover: true, // Stop animation while hovering
+                        manualAdvance: false, // Force manual transitions
+                        captionOpacity: 0.8, // Universal caption opacity
+                        prevText: 'Prev', // Prev directionNav text
+                        nextText: 'Next', // Next directionNav text
+                        beforeChange: function () { }, // Triggers before a slide transition
+                        afterChange: function () { }, // Triggers after a slide transition
+                        slideshowEnd: function () { }, // Triggers after all slides have been shown
+                        lastSlide: function () { }, // Triggers when last slide is shown
+                        afterLoad: function () { } // Triggers when slider has loaded
+                    });
+                });
+            </script>
+        </div>
+        <div>
+            <table border="0" cellpadding="0" cellspacing="0" width="90%" height="100%">
+                <tr>
+                    <td width="20px">
+                    </td>
+                    <td width="95%" valign="top" colspan="2">
+                        <h2 style="color: #000000">
+                            <br />
+                            For your Resident</h2>
+                        <table border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td valign="top" align="left">
+                                    A dream home keeps you comfortable, entertained and always in a good mood. SmartWorks
+                                    smart home system enable all technology in your home to seamlessly communicate together
+                                    in an intelligent way to simplify your life.
+                                    <br />
+                                    <br />
+                                    Smart Home Technology helps your home to transform as modern home. With superior
+                                    home automation system, you can experience intelligent lighting, integrated whole
+                                    house audio and video, automation control, safety and security and climate control.
+                                    You can seamlessly control from touch panels, keypads, smart phones and tablets
+                                    anytime, anywhere.
+                                    <br />
+                                    <br />
+                                    <!-- <br />
+                                    Let’s take control of your home with just one button press from touch panel like
+                                    iPad, iPhone, iPod Touch or Andriod Tablet to adjust your lights, shades, temperature
+                                    and check on your alarm system. This new technology communicate together 
+                                    all on a single platform to maximize energy savings so that it is easy to use, family-friendly, comfort and convenience of the ultimate technology
+                                    lifestyle and harmonious with your home’s decoration.-->
+                                    <br />
+                                    <br />
+                                </td>
+                                <td width="2%">
+                                </td>
+                                <td valign="top" align="left">
+                                    <img alt="" src="images/house1.jpg" width="250px" height="200px" />
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="20px">
+                    </td>
+                    <td>
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tr>
+                                <td width="50px" valign="top" align ="center">
+                                    <img alt="" src="images/home-icon.png" width="30px" height="30px" />
+                                </td>
+                                <td>
+                                    <span class="style1">Home Automation </span>
+                                    <br />
+                                    <br />
+                                    Crestron’s integrated home technology brings all technology in your home to seamlessly
+                                    communicate together in an intelligent way to simplify your life. Enjoy the ultimate
+                                    convenience of custom-tailored Smart Home that easily connects to and manages.
+                                    <br />
+                                    <br />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="50px" valign="top" align ="center">
+                                    <img alt="" src="images/audio-icon-md.png" width="30px" height="30px" />
+                                </td>
+                                <td>
+                                    <span class="style1">Whole House Audio </span>
+                                    <br />
+                                    <br />
+                                    Crestron’s simply the best-sounding; the most powerful multi-zone audio solutions
+                                    can enable true home entertainment solution for your home. Crestron’s multi-room
+                                    audio solutions provide easy access and distribution to vast libraries of media
+                                    from any room in the house.
+                                    <br />
+                                    <br />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="50px" valign="top" align ="center">
+                                    <img alt="" src="images/light.png" width="30px" height="30px" />
+                                </td>
+                                <td>
+                                    <span class="style1">Intelligent Lighting </span>
+                                    <br />
+                                    <br />
+                                    Crestron provides lighting control and energy management that is Integrated by Design.
+                                    Intelligent lighting control enables you to control all your lights in innovative
+                                    way. When room is unoccupied, our automated lighting system allows you to automatic
+                                    dim or turn off all the light. If you are at home or not you can easily monitored
+                                    and adjust all the lights.
+                                    <br />
+                                    <br />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="50px" valign="top" align ="center">
+                                    <img alt="" src="images/temp.png" width="30px" height="30px" />
+                                </td>
+                                <td>
+                                    <span class="style1">Climent Control</span><br />
+                                    <br />
+                                    Crestron’s Heating, Ventilation and Air Conditioning (HVAC) solutions allow home
+                                    owner to control and monitor all air conditioning systems, shades and draperies.
+                                    Our system are designed not only convenience but also allow better energy efficiency.
+                                    <br />
+                                    <br />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="50px" valign="top" align ="center">
+                                    <img alt="" src="images/camera.png" width="30px" height="30px" />
+                                </td>
+                                <td>
+                                    <span class="style1">Safety Security</span><br />
+                                    <br />
+                                    With home automation, you can select and watch all security cameras live from anywhere.
+                                    Can monitor all doors are locked or unlocked, control all door lock and activate
+                                    security system. With motion detection technology you can easily identify unauthorized
+                                    movements.
+                                    <br />
+                                    <br />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="50px" valign="top" align ="center">
+                                    <img alt="" src="images/tv.png" width="30px" height="30px" />
+                                </td>
+                                <td>
+                                    <span class="style1">Home Entertainment Control</span><br />
+                                    <br />
+                                    Now you don’t need to use multiple remote controls anymore. Skynet or 5 Movie, TV,
+                                    DVD or Blu-ray player, all your home theatre system can seamlessly control thru
+                                    our touch panels, keypads or even your smart phones. Not only control simplification,
+                                    we can deliver rich and dynamic viewing and listening experience.<br />
+                                    <br />
+                                    <br />
+                                </td>
+                            </tr>
+                    </td>
+            </table>
+            </tr>
+            <tr>
+                <td width="5%">
+                </td>
+                <td>
+                    <table border="0" cellpadding="0" cellspacing="0" width="90%" height="100%">
+                        <tr align="center">
+                            <td>
+                                <img alt="" src="images/house_inside2.jpg" width="270px" height="200px" />
+                            </td>
+                            <td>
+                                <img alt="" src="images/house_inside1.jpg" width="270px" height="200px" />
+                            </td>
+                            <td>
+                                <img alt="" src="images/house_inside3.jpg" width="270px" height="200px" />
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            </table>
+        </div>
+        <div id="templatemo_main">
+            <div class="cleaner">
+            </div>
+        </div>
+        <!---
+    <div id="templatemo_bottom">
+    	<div class="col one_fourth">
+        	<h5>Recent Posts</h5>
+            <ul class="footer_link">
+            	<li><a href="#">Morbi posuere dictum diam</a></li>
+                <li><a href="#">Suscipit porta mauris</a></li>
+                <li><a href="#">Luctus tincidunt iaculis</a></li>
+                <li><a href="#">Ut porta, lacus at mattis</a></li>
+                <li><a href="#">Non molestie turpis magna</a></li>
+			</ul>
+        </div>
+        <div class="col one_fourth">
+        	<h5>Recent Comments</h5>
+            <ul class="footer_link">
+            	<li><a href="#">Jones</a> on <a href="#">Vivamus ac augue eros</a></li>
+                <li><a href="#">Steven</a> on <a href="#">Curabitur imperdiet lacus</a></li>
+                <li><a href="#">Susan</a> on <a href="#">Duis nec justo ut eros dignissim</a></li>
+                <li><a href="#">Collin</a> on <a href="#">Suscipit dui integer imperdiet</a></li>
+                <li><a href="#">Edward</a> on <a href="#">Sed facilisis tempus nulla sit </a></li>
+			</ul>
+        </div>
+        <div class="col one_fourth">
+        	<h5>Blogroll</h5>
+            <ul class="footer_link">
+            	<li><a href="http://www.templatemo.com/page/1">Free CSS Templates</a></li>
+                <li><a href="http://www.webdesignmo.com/blog">Web Design Resources</a></li>
+            	<li><a href="http://www.flashmo.com">Free Flash Templates</a></li>
+                <li><a href="http://www.templatemo.com">Website Templates</a></li>
+                <li><a href="http://www.koflash.com">Free Web Gallery</a></li>
+			</ul>
+        </div>
+--->
+        <!--<div class="col one_fourth last_box">
+        	<h5>Follow Us</h5>
+            <ul class="footer_link">
+            	<li><a href="#" class="facebook social">Facebook</a></li>
+                <li><a href="#" class="linkedin social">Linkedin</a></li>
+                <li><a href="#" class="myspace social">Myspace</a></li>
+                <li><a href="#" class="youtube social">Youtube</a></li>
+                <!--<li><a href="#" class="vimeo social">Vimeo</a></li>
+			</ul>
+        </div>
+        <div class="facebook" align="center">
+            <a href="#">
+                <img src="images/rss.gif"></a> <a href="www.facebook.com/thuzarkk">
+                    <img src="images/facebook.gif">
+                </a><a href="#">
+                    <img src="images/twitter.gif"></a> <a href="#">
+                        <img src="images/youtube.gif"></a> <a href="#">
+                            <img src="images/flickr.gif"></a> <a href="#">
+                                <img src="images/linkedin.gif"></a>
+        </div>-->
+        <div id="templatemo_footer">
+            Copyright © 2013 SmartWorks Co. Ltd
+        </div>
+    </div>
+</body>
+</html>

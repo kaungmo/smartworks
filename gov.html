@@ -1,0 +1,290 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Welcome to SmartWorks</title>
+    <meta name="keywords" content="smart works, web development, queue system, smart home, security, security door, decoration, web design, yangon, myanmar, software development" />
+    <link href="css/templatemo_style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
+    <script language="javascript" type="text/javascript">
+        function clearText(field) {
+
+            if (field.defaultValue == field.value) field.value = '';
+            else if (field.value == '') field.value = field.defaultValue;
+
+        }
+    </script>
+    <link rel="stylesheet" type="text/css" href="css/ddsmoothmenu.css" />
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/ddsmoothmenu.js">
+
+    </script>
+    <script type="text/javascript">
+
+        ddsmoothmenu.init({
+            mainmenuid: "templatemo_menu", //menu DIV id
+            orientation: 'h', //Horizontal or vertical menu: Set to "h" or "v"
+            classname: 'ddsmoothmenu', //class added to menu's outer DIV
+            //customtheme: ["#1c5a80", "#18374a"],
+            contentsource: "markup" //"markup" or ["container_id", "path_to_menu_file"]
+        })
+
+    </script>
+    <style type="text/css">
+        .style1
+        {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div id="templatemo_wrapper">
+        <div id="templatemo_header">
+            <table border="0" cellpadding="0" cellspacing="0" width="100%" height="100%">
+                <tr>
+                    <td width="30%">
+                        <img src="images/smartworks_logo.png" height="130px" width="250px" />
+                    </td>
+                    <td width="70%" valign="bottom">
+                        <div id="templatemo_menu" class="ddsmoothmenu">
+                            <ul>
+                                <li><a href="index.html" style="color:Black">Home</a></li>
+                                <li><a href="" style="color:Black">Company</a>
+                                    <ul>
+                                        <li><a href="about.html">About SmartWorks</a></li>
+                                        <li><a href="career.htm">Career</a></li>
+                                    </ul>
+                                </li>
+                               <li><a href="" style="color:Black">Markets</a>
+                                    <ul>
+                                        <li><a href="ce.html">Corporate Enterprise</a></li>
+                                        <li><a href="gov.html">Government</a></li>
+                                        <li><a href="res.html">Residential</a></li>
+                                       
+                                    </ul>
+                                </li>
+                                <li><a href="" style="color:Black" >Products </a>
+                                    <ul>
+                                        <li><a href="crestron.html">Crestron</a></li>
+                                      
+                                    </ul>
+                                </li>
+                                <li><a href="" style="color:Black" >Services</a>
+                                    <ul>
+                                        <li><a href="systemIntegration.html">System Integration</a></li>
+                                        <li><a href="software.html">Application Development</a></li>
+                                        <li><a href="mgnt.html">Maintenance & Facility Management</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="contact.html" style="color:Black">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <!-- end of header -->
+            <!-- <div id="search_box">
+            <form action="#" method="get">
+                <input type="text" value="Search" name="q" size="10" id="searchfield" title="searchfield" onfocus="clearText(this)" onblur="clearText(this)" />
+                <input type="submit" name="Search" value="" id="searchbutton" title="Search" />
+            </form>
+        </div>-->
+           
+        </div>
+        <!-- end of templatemo_menu -->
+        <div id="templatemo_slider">
+            <div id="slider" class="nivoSlider">
+                <img src="images/slider/01.jpg" alt="" title="" />
+				<img src="images/slider/02.jpg" alt="" title="" />
+                <img src="images/slider/03.jpg" alt="" title="" />
+                <img src="images/slider/04.jpg" alt="" title="" />
+            </div>
+            <div id="htmlcaption" class="nivo-html-caption">
+                <strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>.
+            </div>
+            <script type="text/javascript" src="js/jquery-1.4.3.min.js"></script>
+            <script type="text/javascript" src="js/jquery.nivo.slider.pack.js"></script>
+            <script type="text/javascript">
+                $(window).load(function () {
+                    $('#slider').nivoSlider({
+                        effect: 'random', // Specify sets like: 'fold,fade,sliceDown'
+                        slices: 15, // For slice animations
+                        boxCols: 8, // For box animations
+                        boxRows: 4, // For box animations
+                        animSpeed: 500, // Slide transition speed
+                        pauseTime: 3000, // How long each slide will show
+                        startSlide: 0, // Set starting Slide (0 index)
+                        directionNav: true, // Next and Prev navigation
+                        directionNavHide: false, // Only show on hover
+                        controlNav: false, // 1,2,3... navigation
+                        controlNavThumbs: false, // Use thumbnails for Control Nav
+                        controlNavThumbsFromRel: false, // Use image rel for thumbs
+                        controlNavThumbsSearch: '.jpg', // Replace this with...
+                        controlNavThumbsReplace: '_thumb.jpg', // ...this in thumb Image src
+                        keyboardNav: true, // Use left and right arrows
+                        pauseOnHover: true, // Stop animation while hovering
+                        manualAdvance: false, // Force manual transitions
+                        captionOpacity: 0.8, // Universal caption opacity
+                        prevText: 'Prev', // Prev directionNav text
+                        nextText: 'Next', // Next directionNav text
+                        beforeChange: function () { }, // Triggers before a slide transition
+                        afterChange: function () { }, // Triggers after a slide transition
+                        slideshowEnd: function () { }, // Triggers after all slides have been shown
+                        lastSlide: function () { }, // Triggers when last slide is shown
+                        afterLoad: function () { } // Triggers when slider has loaded
+                    });
+                });
+            </script>
+        </div>
+        <div>
+            <table border="0" cellpadding="0" cellspacing="0" width="95%" height="100%">
+                <tr>
+                  
+                    <td width="5%">
+                    </td>
+                    <td width="95%" valign="top">
+                        <h2 style="color: #000000">
+                            <br />
+                            What can we do for Government Sector??</h2>
+                        <p>
+                        <br />
+                        <table border=0 cellpadding=0 cellspacing=0>
+                        <tr>
+                        <td valign=top><img alt="" src="images/meetingroom2.jpg" width="250px" height="200px"/></td>
+                        <td width="5%"></td>
+                        <td valign=top>  <span class="style1">Office Meeting Room/Conference Room</span><br /><br />
+                         
+                                                 
+                         SmartWorks offers the integrated solution of simplify and streamline the technology for 
+                         your meeting room/conference room throughout the facility.
+                         <br /><br />
+                         Our solution will help to control and balance the need for lights, drapes, screens, thermostats 
+                         and AV equipment (laptop, projector) by using an intuitive easy-to-use touch panel, remote 
+                         or custom keypad.
+                         <br /><br />
+                         (e.g Schdule shades and drapes to rise when a meeting is schduled, gently lower to reduce glare when the projector is turned on)
+
+                         </td>
+                        </tr>                        
+                        </table>
+
+                        <Br /><br />
+
+                        <table border=0 cellpadding=0 cellspacing=0>
+                        <tr>
+                        <td valign =top>
+                         <span class="style1">Access Control</span>
+                        <br /><br />
+                           SmartWorks supplies Access Control System for doors in hotel, 
+                           offices, data center, factories, schools to prevent from unauthorized access. 
+                           The systems we supply keep your staff, buildings and assets safe through restricting access 
+                           to parts of the building through proximity card, card swipe systems and keypad entry systems 
+                           using PINs or numeric codes. 
+                      
+                        <br /><br />
+                        By using of this, you no longer need to change locks or re-issue keys if they are stolen or lost.
+                        With an electronic access control system cards or fobs are issued to allow access through controlled doors.
+                        If they are lost or stolen, they can be easily de-activated or barred so that it is impossible to gain entry through the door again. 
+                        <br /><br />                            
+                        Access can be granted to all users of a door, such as the main entrance but internal doors may only allow access
+                        to certain people who need to be in those areas of the building. This is called zone control.
+                        <br /><br />
+                        </td>
+                        <td width="5%"></td>
+                        <td valign=top><img alt="" src="images/dooraccess.jpg" width="250px" height="280px"/></td>
+                        
+                        <td></td>
+                        </tr>
+                        </table>
+                        <br /><br />
+                           
+                         <table border=0 cellpadding=0 cellspacing=0>
+                         <tr>
+                          <td valign=top><img alt="" src="images/ctv.jpg" width="250px" height="200px"/></td>
+                           <td width="5%"></td>
+                         <td valign=top> 
+                         <span class="style1">Security for your Building</span>
+                        <br /><br />
+                        CCTV camera system is being widely employed as a security system for surveillance in offices as well as homes. 
+                        <br /><br />
+                        The images and videos captured by a CCTV camera system are recorded and stored into a database.
+                        These are helpful in maintaining records so that you can be easily retrieved later, when you needed.
+                        </td>
+                        
+                        
+                         </tr>
+                         </table>
+                        
+                    </td>
+                </tr>
+                <tr>
+                    
+                    <td colspan="2">
+                        
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="templatemo_main">
+            <div class="cleaner">
+            </div>
+        </div>
+        <!---
+    <div id="templatemo_bottom">
+    	<div class="col one_fourth">
+        	<h5>Recent Posts</h5>
+            <ul class="footer_link">
+            	<li><a href="#">Morbi posuere dictum diam</a></li>
+                <li><a href="#">Suscipit porta mauris</a></li>
+                <li><a href="#">Luctus tincidunt iaculis</a></li>
+                <li><a href="#">Ut porta, lacus at mattis</a></li>
+                <li><a href="#">Non molestie turpis magna</a></li>
+			</ul>
+        </div>
+        <div class="col one_fourth">
+        	<h5>Recent Comments</h5>
+            <ul class="footer_link">
+            	<li><a href="#">Jones</a> on <a href="#">Vivamus ac augue eros</a></li>
+                <li><a href="#">Steven</a> on <a href="#">Curabitur imperdiet lacus</a></li>
+                <li><a href="#">Susan</a> on <a href="#">Duis nec justo ut eros dignissim</a></li>
+                <li><a href="#">Collin</a> on <a href="#">Suscipit dui integer imperdiet</a></li>
+                <li><a href="#">Edward</a> on <a href="#">Sed facilisis tempus nulla sit </a></li>
+			</ul>
+        </div>
+        <div class="col one_fourth">
+        	<h5>Blogroll</h5>
+            <ul class="footer_link">
+            	<li><a href="http://www.templatemo.com/page/1">Free CSS Templates</a></li>
+                <li><a href="http://www.webdesignmo.com/blog">Web Design Resources</a></li>
+            	<li><a href="http://www.flashmo.com">Free Flash Templates</a></li>
+                <li><a href="http://www.templatemo.com">Website Templates</a></li>
+                <li><a href="http://www.koflash.com">Free Web Gallery</a></li>
+			</ul>
+        </div>
+--->
+        <!--<div class="col one_fourth last_box">
+        	<h5>Follow Us</h5>
+            <ul class="footer_link">
+            	<li><a href="#" class="facebook social">Facebook</a></li>
+                <li><a href="#" class="linkedin social">Linkedin</a></li>
+                <li><a href="#" class="myspace social">Myspace</a></li>
+                <li><a href="#" class="youtube social">Youtube</a></li>
+                <!--<li><a href="#" class="vimeo social">Vimeo</a></li>
+			</ul>
+        </div>
+        <div class="facebook" align="center">
+            <a href="#">
+                <img src="images/rss.gif"></a> <a href="www.facebook.com/thuzarkk">
+                    <img src="images/facebook.gif">
+                </a><a href="#">
+                    <img src="images/twitter.gif"></a> <a href="#">
+                        <img src="images/youtube.gif"></a> <a href="#">
+                            <img src="images/flickr.gif"></a> <a href="#">
+                                <img src="images/linkedin.gif"></a>
+        </div>-->
+        <div id="templatemo_footer">
+            Copyright © 2013 SmartWorks Co. Ltd
+        </div>
+    </div>
+</body>
+</html>
